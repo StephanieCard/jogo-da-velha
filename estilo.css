@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linha{
+    width: 31vw;
+    height: 17vh;
+    display: flex;
+    margin: 0;
+}
+
+.casa{
+    border: 4px solid #ff0101e8;
+    background-color: #ff0101e8;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+p{
+    font-size: 72pt;
+    font-family: sans-serif;
+    color: white;
+}
+
+.casa:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 10px grey;
+}
+
+.venceu, .velha{
+    position: fixed;
+    transform: translateY(-500px);
+}
+
+.aparecervenceu, .aparecervelha{
+    transform: translateY(0);
+}
+
+
